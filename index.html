@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Clone</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff385c;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .hero {
+            background-image: url('https://source.unsplash.com/1600x900/?travel');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+        }
+
+        .listing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .listing {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .listing img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .listing .details {
+            padding: 10px;
+        }
+
+        .listing .details h3 {
+            margin: 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .listing .details p {
+            margin: 5px 0;
+            color: #666;
+        }
+
+        .listing .details .price {
+            font-weight: bold;
+            color: #ff385c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Airbnb</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Host</a></li>
+                <li><a href="#">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Find your next stay</h1>
+    </section>
+
+    <section class="listing-grid">
+        <div class="listing">
+            <img src="pic1.jpeg" alt="Listing 1">
+            <div class="details">
+                <h3>Modern Apartment</h3>
+                <p>City Center, 2 guests</p>
+                <p class="price">$120/night</p>
+            </div>
+        </div>
+
+        <div class="listing">
+            <img src="pic 2.jpeg" alt="Listing 2">
+            <div class="details">
+                <h3>Cozy Cabin</h3>
+                <p>Mountain View, 4 guests</p>
+                <p class="price">$150/night</p>
+            </div>
+        </div>
+
+        <div class="listing">
+            <img src="pic3.jpeg" alt="Listing 3">
+            <div class="details">
+                <h3>Luxury Villa</h3>
+                <p>Beachfront, 6 guests</p>
+                <p class="price">$300/night</p>
+            </div>
+        </div>
+        <div class="listing">
+            <img src="beach villa.jpeg" alt="Listing 1">
+            <div class="details">
+                <h3>Beach villas</h3>
+                <p>Beach Center, 4 guests</p>
+                <p class="price">$140/night</p>
+            </div>
+        </div>
+        <div class="listing">
+            <img src="jungle villas.jpeg" alt="Listing 1">
+            <div class="details">
+                <h3>Jungle villas</h3>
+                <p>Jungle Center, 2 guests</p>
+                <p class="price">$160/night</p>
+            </div>
+        </div>
+        <div class="listing">
+            <img src="dersert dppm.jpeg" alt="Listing 1">
+            <div class="details">
+                <h3>Desert dooms</h3>
+                <p>Middle of deserts, 3 guests</p>
+                <p class="price">$180/night</p>
+            </div>
+        </div>
+        <div class="listing">
+            <img src="egpyt night.jpg" alt="Listing 1">
+            <div class="details">
+                <h3>Egypt Night</h3>
+                <p>Night Experience, 2 guests</p>
+                <p class="price">$200/night</p>
+            </div>
+        </div>
+        <div class="listing">
+            <img src="landon.jpeg" alt="Listing 1">
+            <div class="details">
+                <h3>Landon</h3>
+                <p>Landon city tour, 6 guests</p>
+                <p class="price">$299night</p>
+            </div>
+        </div>
+        <div class="listing">
+            <img src="las vegas.jpeg" alt="Listing 1">
+            <div class="details">
+                <h3>Las Vegas</h3>
+                <p>City tour, 4 guests</p>
+                <p class="price">$399/night</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
